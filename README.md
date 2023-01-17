@@ -36,6 +36,6 @@ test.py - A test to see if i could simulate one of our cells in core neuron
 
 second_test.py - A test to see if i could use one of our labs synapses in core neuron
 
-bmtk_test.py - builds and then runs a bmtk model, to run with core neuron must use my version of bmtk on my github
+bmtk_test.py - builds and then runs a bmtk model, to run with core neuron must use my version of bmtk on my [GitHub](https://github.com/GregGlickert/bmtk)
 
 **When compiling mod files you should not compile the mod files in the components/mechanisms folder core neuron does not read those correctly and it casues a strange error and says there are more cells then actually in sim. Just compile modfiles in base directory**
