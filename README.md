@@ -38,4 +38,6 @@ second_test.py - A test to see if i could use one of our labs synapses in core n
 
 bmtk_test.py - builds and then runs a bmtk model, to run with core neuron must use my version of bmtk on my [GitHub](https://github.com/GregGlickert/bmtk)
 
+data_check.py - simple script to generate membrane voltage plot
+
 **When compiling mod files you should not compile the mod files in the components/mechanisms folder core neuron does not read those correctly and it casues a strange error and says there are more cells then actually in sim. Just compile modfiles in base directory**
