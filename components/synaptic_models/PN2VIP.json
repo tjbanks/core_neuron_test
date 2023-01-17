@@ -1,0 +1,7 @@
+{   
+    "level_of_detail": "pyr2vip",
+    "initW_lognormal_mean": "0.00000001",
+    "initW_lognormal_std": "0.0000000001",
+    "Percent_NMDA_block" : "0",
+    "Percent_AMPA_block" : "0"
+}

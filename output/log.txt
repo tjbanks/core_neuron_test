@@ -1,0 +1,8 @@
+2023-01-16 19:49:40,642 [INFO] Created log file
+2023-01-16 19:49:40,773 [INFO] Building cells.
+2023-01-16 19:49:40,775 [INFO] Building recurrent connections
+2023-01-16 19:49:40,782 [INFO] Running simulation for 2000.000 ms with the time step 0.100 ms
+2023-01-16 19:49:40,782 [INFO] Starting timestep: 0 at t_sim: 0.000 ms
+2023-01-16 19:49:40,782 [INFO] Block save every 5000 steps
+2023-01-16 19:49:40,782 [INFO] Running core neuron sim
+2023-01-16 19:49:42,392 [INFO] Simulation completed in 1.611 seconds 
