@@ -2,16 +2,21 @@
 ## to install core neuron
 
 I built my env with python 3.8
-
+```
 pip install neuron-nightly
-
+```
 or 
 
 build with cmake using the commands **best way to install core neuron is using cmake**
 
 *load a version of MPI this happens to be the one on the lab server*
-
+```
 module load mpich-x86_64-nopy
+
+git clone https://github.com/neuronsimulator/nrn
+cd nrn
+mkdir build
+cd build
 
 cmake .. \
  -DNRN_ENABLE_INTERVIEWS=OFF \
@@ -21,13 +26,12 @@ cmake .. \
  -DCMAKE_INSTALL_PREFIX=$HOME/install
  
  cmake --build . --parallel 8 --target install
- 
+ ```
 Then make sure to set path
-
+```
 export PYTHONPATH=$HOME/install/lib/python:$PYTHONPATH
-
 export PATH=$HOME/install/bin:$PATH
-
+```
 # Files
 
 core_neuron_example.py - example from the core neuron github
