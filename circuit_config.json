@@ -21,12 +21,7 @@
         "node_types_file": "$NETWORK_DIR/biophysical_node_types.csv"
       }
     ],
-    "edges": [
-      {
-        "edge_types_file": "$NETWORK_DIR/biophysical_biophysical_edge_types.csv",
-        "edges_file": "$NETWORK_DIR/biophysical_biophysical_edges.h5"
-      }
-    ],
+    "edges": [],
     "gap_juncs": []
   }
 }

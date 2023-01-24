@@ -9,6 +9,11 @@ import h5py
 import synapses
 import matplotlib.pyplot as plt
 import pdb
+from neuron import h
+from neuron import coreneuron
+import reports
+coreneuron.enable = True
+
 
 def run(config_file):
     warnings.simplefilter(action='ignore', category=FutureWarning)
@@ -33,7 +38,17 @@ def run(config_file):
     for cell in cells:
         cells[cell].hobj.insert_mechs(cells[cell].gid)
         pass
-    sim.run()
-    #bionet.nrn.quit_execution()
+    
+    voltage_gids = [1,0]
+    reports.voltage_record(voltage_gids) 
 
-run('config.json')
+    reports.spike_record()
+    sim.run()
+
+    reports.save_voltage()
+    reports.save_spikes()
+
+
+    bionet.nrn.quit_execution()
+
+run('/home/gjgpb9/coreneuron_test/config.json')

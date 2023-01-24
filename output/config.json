@@ -20,18 +20,13 @@
         "node_types_file": "/home/gjgpb9/coreneuron_test/network/biophysical_node_types.csv"
       }
     ],
-    "edges": [
-      {
-        "edge_types_file": "/home/gjgpb9/coreneuron_test/network/biophysical_biophysical_edge_types.csv",
-        "edges_file": "/home/gjgpb9/coreneuron_test/network/biophysical_biophysical_edges.h5"
-      }
-    ],
+    "edges": [],
     "gap_juncs": []
   },
   "target_simulator": "NEURON",
   "run": {
     "tstart": 0.0,
-    "tstop": 2000,
+    "tstop": 5000,
     "dt": 0.1,
     "dL": 20.0,
     "spike_threshold": -15.0,
@@ -49,7 +44,7 @@
       "gids": [
         0
       ],
-      "amp": 0.1,
+      "amp": 0.4,
       "delay": 1000.0,
       "duration": 400.0
     }
