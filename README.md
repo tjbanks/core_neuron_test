@@ -36,7 +36,11 @@ test.py - A test to see if i could simulate one of our cells in core neuron
 
 second_test.py - A test to see if i could use one of our labs synapses in core neuron
 
-bmtk_test.py - builds and then runs a bmtk model, to run with core neuron must use my version of bmtk on my [GitHub](https://github.com/GregGlickert/bmtk)
+bmtk_build.py - builds simple BMTK netowrk
+
+run_bmtk.py - runs a bmtk network with core neuron you need the bmtk from my [GitHub](https://github.com/GregGlickert/bmtk) installed for it to run
+
+reports.py - Where code for voltage recording lives
 
 data_check.py - simple script to generate membrane voltage plot
 
