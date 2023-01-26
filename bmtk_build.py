@@ -13,7 +13,7 @@ synapses.load()
 syn = synapses.syn_params_dicts()
 net = NetworkBuilder("biophysical")
 
-net.add_nodes(N=2, pop_name='PN',
+net.add_nodes(N=30000, pop_name='PN',
               mem_potential='e',
               model_type='biophysical',
               model_template='hoc:PN_C',

@@ -81,18 +81,6 @@ PARAMETER {
 	
 }
 
-VERBATIM
-#include <stdlib.h>
-#include <math.h>
-
-#if 0
-#include <values.h> /* contains MAXLONG */
-#endif
-#if !defined(MAXLONG)
-#include <limits.h>
-#define MAXLONG LONG_MAX
-#endif
-ENDVERBATIM
 
 
 ASSIGNED {
@@ -237,7 +225,7 @@ NET_RECEIVE(dummy_weight) {
 	
 	if (flag == 0) {  : Short term plasticity was implemented(Varela et. al 1997):
 	
-	rp = unirand()	
+	:rp = unirand()	
 	
 	:F  = 1 + (F-1)* exp(-(t - tsyn)/tauF)
 	D1 = 1 - (1-D1)*exp(-(t - tsyn)/tauD1)
@@ -291,10 +279,4 @@ FUNCTION omega(Cani (mM), threshold1 (uM), threshold2 (uM)) {
 	if (Cacon <= threshold1) { omega = 0}
 	else if (Cacon >= threshold2) {	omega = 1/(1+50*exp(-50*(Cacon-threshold2)))}
 	else {omega = -sqrt(r*r-(Cacon-mid)*(Cacon-mid))}
-}
-
-FUNCTION unirand()() {
-    VERBATIM
-    _lunirand = (((double)random()) / ((double)MAXLONG));
-    ENDVERBATIM
 }

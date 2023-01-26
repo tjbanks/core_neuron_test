@@ -1,8 +1,3 @@
-2023-01-24 00:49:15,192 [INFO] Created log file
-2023-01-24 00:49:15,307 [INFO] Building cells.
-2023-01-24 00:49:15,309 [INFO] Building recurrent connections
-2023-01-24 00:49:15,314 [INFO] Running simulation for 5000.000 ms with the time step 0.100 ms
-2023-01-24 00:49:15,314 [INFO] Starting timestep: 0 at t_sim: 0.000 ms
-2023-01-24 00:49:15,314 [INFO] Block save every 5000 steps
-2023-01-24 00:49:15,314 [INFO] Running core neuron sim
-2023-01-24 00:49:19,176 [INFO] Simulation completed in 3.862 seconds 
+2023-01-25 22:41:43,339 [INFO] Created log file
+2023-01-25 22:41:43,374 [WARNING] Unable to load NEURON mechanisms.
+2023-01-25 22:41:43,826 [INFO] Building cells.

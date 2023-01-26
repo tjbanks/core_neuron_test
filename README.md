@@ -49,3 +49,20 @@ reports.py - Where code for voltage recording lives
 data_check.py - simple script to generate membrane voltage plot
 
 **When compiling mod files you should not compile the mod files in the components/mechanisms folder core neuron does not read those correctly and it casues a strange error and says there are more cells then actually in sim. Just compile modfiles in base directory**
+
+
+
+# Additional info -
+
+To run a core neuron simulation you'll need to compile with the `-coreneuron` option when using `nrnivmodl` eg:
+
+```
+cd ./components/mechanisms
+nrnivmodl -coreneuron modfiles
+```
+
+You'll also need to use the `special` file when running on GPU
+
+```
+./components/mechanisms/x86_64/special run_bmtk.py
+```

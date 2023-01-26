@@ -68,19 +68,6 @@ PARAMETER {
 	
 }
 
-VERBATIM
-#include <stdlib.h>
-#include <math.h>
-
-#if 0
-#include <values.h> /* contains MAXLONG */
-#endif
-#if !defined(MAXLONG)
-#include <limits.h>
-#define MAXLONG LONG_MAX
-#endif
-ENDVERBATIM
-
 ASSIGNED {
 	v (mV)
 

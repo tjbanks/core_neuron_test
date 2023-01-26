@@ -81,11 +81,6 @@ PROCEDURE states() {
         trates(v+vshift)      
         m = m + mexp*(minf-m)
         h = h + hexp*(hinf-h)
-	VERBATIM
-	#ifndef NRNBBCORE
-	return 0;
-	#endif
-	ENDVERBATIM
 }
 
 

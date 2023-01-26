@@ -87,18 +87,6 @@ PARAMETER {
         tauD2 = 70 (ms) < 1e-9, 1e9 >		
 }
 
-VERBATIM
-#include <stdlib.h>
-#include <math.h>
-
-#if 0
-#include <values.h> /* contains MAXLONG */
-#endif
-#if !defined(MAXLONG)
-#include <limits.h>
-#define MAXLONG LONG_MAX
-#endif
-ENDVERBATIM
 
 ASSIGNED {
 	v (mV)
@@ -445,10 +433,4 @@ FUNCTION DA2(DAstart2 (ms), DAstop2 (ms)) {
 		else if (t > DA2temp14+100 && t < DA2temp15) {DA2 = 1.0 + (DA_S-1)*exp(-Beta2*(t-(DA2temp14+100)))}   				 
 	else if (t >= DA2temp15 && t <= DA2temp15+100) {DA2=DA_S}					: 16th shock
 		else  {	DA2 = 1.0}
-}
-
-FUNCTION unirand()() {
-    VERBATIM
-    _lunirand = (((double)random()) / ((double)MAXLONG));
-    ENDVERBATIM
 }

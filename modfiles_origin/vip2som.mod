@@ -99,19 +99,6 @@ PARAMETER {
 	NE_S = 1 : 0.4
 }
 
-VERBATIM
-#include <stdlib.h>
-#include <math.h>
-
-#if 0
-#include <values.h> /* contains MAXLONG */
-#endif
-#if !defined(MAXLONG)
-#include <limits.h>
-#define MAXLONG LONG_MAX
-#endif
-ENDVERBATIM
-
 ASSIGNED {
 	v (mV)
 	eca (mV)
@@ -635,9 +622,4 @@ FUNCTION GAP1(GAPstart1 (ms), GAPstop1 (ms)) {
 	if (t <= GAPstart1) { GAP1 = 1}
 	else if (t >= GAPstop1 ) {GAP1 = 1}					: During the Gap, apply lamda2*2
 	else  {	GAP1 = 1}
-}
-FUNCTION unirand()() {
-    VERBATIM
-    _lunirand = (((double)random()) / ((double)MAXLONG));
-    ENDVERBATIM
 }

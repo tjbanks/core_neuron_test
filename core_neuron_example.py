@@ -2,6 +2,7 @@ import sys
 from neuron import h, gui
 from neuron import coreneuron
 coreneuron.enable = True
+coreneuron.gpu = True
 
 # setup model
 h('''create soma''')

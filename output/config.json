@@ -1,23 +1,22 @@
 {
-  "network": "/home/gjgpb9/coreneuron_test/circuit_config.json",
-  "simulation": "/home/gjgpb9/coreneuron_test/simulation_config.json",
-  "config_path": "/home/gjgpb9/coreneuron_test/config.json",
-  "config_dir": "/home/gjgpb9/coreneuron_test",
+  "network": "/home/tyler/git_stage/core_neuron_test/circuit_config.json",
+  "simulation": "/home/tyler/git_stage/core_neuron_test/simulation_config.json",
+  "config_path": "/home/tyler/git_stage/core_neuron_test/config.json",
+  "config_dir": "/home/tyler/git_stage/core_neuron_test",
   "components": {
-    "__pycache___dir": "/home/gjgpb9/coreneuron_test/components/__pycache__",
-    "biophysical_neuron_models_dir": "/home/gjgpb9/coreneuron_test/components/biophysical_neuron_models",
-    "filter_models_dir": "/home/gjgpb9/coreneuron_test/components/filter_models",
-    "mechanisms_dir": "/home/gjgpb9/coreneuron_test/components/mechanisms",
-    "morphologies_dir": "/home/gjgpb9/coreneuron_test/components/morphologies",
-    "point_neuron_models_dir": "/home/gjgpb9/coreneuron_test/components/point_neuron_models",
-    "synaptic_models_dir": "/home/gjgpb9/coreneuron_test/components/synaptic_models",
-    "templates_dir": "/home/gjgpb9/coreneuron_test/components/templates"
+    "filter_models_dir": "/home/tyler/git_stage/core_neuron_test/components/filter_models",
+    "templates_dir": "/home/tyler/git_stage/core_neuron_test/components/templates",
+    "synaptic_models_dir": "/home/tyler/git_stage/core_neuron_test/components/synaptic_models",
+    "mechanisms_dir": "/home/tyler/git_stage/core_neuron_test/components/mechanisms",
+    "biophysical_neuron_models_dir": "/home/tyler/git_stage/core_neuron_test/components/biophysical_neuron_models",
+    "morphologies_dir": "/home/tyler/git_stage/core_neuron_test/components/morphologies",
+    "point_neuron_models_dir": "/home/tyler/git_stage/core_neuron_test/components/point_neuron_models"
   },
   "networks": {
     "nodes": [
       {
-        "nodes_file": "/home/gjgpb9/coreneuron_test/network/biophysical_nodes.h5",
-        "node_types_file": "/home/gjgpb9/coreneuron_test/network/biophysical_node_types.csv"
+        "nodes_file": "/home/tyler/git_stage/core_neuron_test/network/biophysical_nodes.h5",
+        "node_types_file": "/home/tyler/git_stage/core_neuron_test/network/biophysical_node_types.csv"
       }
     ],
     "edges": [],
@@ -50,9 +49,9 @@
     }
   },
   "output": {
-    "log_file": "/home/gjgpb9/coreneuron_test/output/log.txt",
-    "output_dir": "/home/gjgpb9/coreneuron_test/output",
-    "spikes_file": "/home/gjgpb9/coreneuron_test/output/spikes.h5"
+    "log_file": "/home/tyler/git_stage/core_neuron_test/output/log.txt",
+    "output_dir": "/home/tyler/git_stage/core_neuron_test/output",
+    "spikes_file": "/home/tyler/git_stage/core_neuron_test/output/spikes.h5"
   },
   "reports": {
     "v_report": {
@@ -62,7 +61,7 @@
       "sections": "soma"
     }
   },
-  "node_sets_file": "/home/gjgpb9/coreneuron_test/node_sets.json",
+  "node_sets_file": "/home/tyler/git_stage/core_neuron_test/node_sets.json",
   "node_sets": {
     "biophysical_nodes": {
       "model_type": "biophysical"

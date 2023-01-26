@@ -5,6 +5,7 @@ NEURON {
 	USEION ca READ ica
 	USEION cas READ casi WRITE casi VALENCE 2 
 	RANGE fcas, taucas, cainf,xx
+	THREADSAFE
 }
 
 UNITS {
@@ -12,10 +13,10 @@ UNITS {
         (mA) = (milliamp)
 	(mV) = (millivolt)
 	FARADAY = 96485.309 (coul)
+	PI = (pi) (1)
 }
 
 PARAMETER {
-	pi = 3.14159265
 	taucas= 1000 (ms) 	: decay time constant
     cainf= 50e-6   (mM)  	: equilibrium ca2+ concentration
 	fcas = 0.024
