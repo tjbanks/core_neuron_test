@@ -1,0 +1,235 @@
+1  wsl
+    2  exit
+    3  curl https://developer.download.nvidia.com/hpc-sdk/ubuntu/DEB-GPG-KEY-NVIDIA-HPC-SDK | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg
+    4  echo 'deb [signed-by=/usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg] https://developer.download.nvidia.com/hpc-sdk/ubuntu/amd64 /' | sudo tee /etc/apt/sources.list.d/nvhpc.list
+    5  sudo apt-get update -y
+    6  sudo apt-get install -y nvhpc-23-1
+    7  nvidia-smi
+    8  python3
+    9  python3 -m neuro
+   10  python3 -m venv
+   11  python3 -m venv neuro
+   12  apt install python3.10-venv
+   13  sudo apt install python3.10-venv
+   14  python3 -m venv neuro
+   15  ls
+   16  python3 -m venv
+   17  python3 -m venv neuro
+   18  ./neuro/bin/python3
+   19  activate
+   20  which python
+   21  which python3
+   22  ./neuro/bin/activate
+   23  chmod +x ./neuro/bin/activate
+   24  ./neuro/bin/activate
+   25  which python
+   26  which python3
+   27  source ./neuro/bin/activate
+   28  exit
+   29  source neuro/bin/activate
+   30  which python
+   31  python
+   32  pip install neuron-gpu-nightly
+   33  python
+   34  pip install torch torchvision torchaudio
+   35  python
+   36  history
+   37  git
+   38  mkdir git_stage
+   39  cd git_stage/
+   40  git clone https://github.com/GregGlickert/core_neuron_test
+   41  cd core_neuron_test/
+   42  ls
+   43  code .
+   44  exit
+   45  source ./neuro/bin/activate
+   46  vim .bashrc
+   47  exit
+   48  cd git_stage/core_neuron_test/
+   49  code .
+   50  python bmtk_build.py
+   51  cd ..
+   52  git clone https://github.com/alleninstitute/bmtk
+   53  ls
+   54  cd bmtk
+   55  ls
+   56  python setup.py --develop
+   57  python setup.py develop
+   58  cd ../core_neuron_test/
+   59  python bmtk_build.py
+   60  cat README.md
+   61  python core_neuron_example.py
+   62  nvidia-smi
+   63  cmake
+   64  module
+   65  sudo apt-install build-essential libssl-dev
+   66  sudo apt install build-essential libssl-dev
+   67  pip freeze
+   68  pip uninstall NEURON-gpu-nightly
+   69  cd ..
+   70  cd tmp
+   71  mkdir temp
+   72  cd temp/
+   73  wget https://github.com/Kitware/CMake/releases/download/v3.25.2/cmake-3.35.2.tar.gz
+   74  wget https://github.com/Kitware/CMake/releases/download/v3.25.2/cmake-linux-x86_64-3.35.2.tar.gz
+   75  wget https://github.com/Kitware/CMake/releases/download/v3.25.2/cmake-3.25.2-linux-x86_64.tar.gz
+   76  ls
+   77  tar -zxvf cmake-3.25.2-linux-x86_64.tar.gz
+   78  cd cmake-3.25.2-linux-x86_64/
+   79  ls
+   80  cd bin/
+   81  ls
+   82  cd ..
+   83  ls
+   84  ls share
+   85  cd ..
+   86  wget https://github.com/Kitware/CMake/releases/download/v3.20.0/cmake-3.20.0.tar.gz
+   87  tar -zxvf cmake-3.20.0.tar.gz
+   88  ls
+   89  cd cmake-3.20.0/
+   90  ls
+   91  ./bootstrap
+   92  cd ..
+   93  git clone https://github.com/neuronsimulator/nrn
+   94  cd nrn
+   95  mkdir build
+   96  cd build
+   97  module
+   98  apt install module
+   99  sudo apt install module
+  100  load
+  101  cmake ..  -DNRN_ENABLE_CORENEURON=ON  -DCORENRN_ENABLE_GPU=ON
+  102  cmake
+  103  cd ../../cmake-3.20.0/
+  104  make
+  105  sudo make install
+  106  cmake --version
+  107  cd ../nrn/build/
+  108  cmake ..  -DNRN_ENABLE_CORENEURON=ON  -DCORENRN_ENABLE_GPU=ON
+  109  cmake ..  -DNRN_ENABLE_CORENEURON=ON  -DCORENRN_ENABLE_GPU=ON
+  110  ls /home/tyler/neuro/bin/python3
+  111  cmake ..  -DNRN_ENABLE_CORENEURON=ON  -DCORENRN_ENABLE_GPU=ON
+  112  nvc
+  113  nvcc
+  114  history
+  115  nvcc
+  116  find nvc /
+  117  find / | grep nvc
+  118  cd /opt/nvidia/hpc_sdk/Linux_x86_64/23.1/compilers/bin/
+  119  ls
+  120  cd -
+  121  vim ~/.bashrc
+  122  exit
+  123  cd git_stage/
+  124  cd temp
+  125  ls
+  126  cd nrn
+  127  cd build/
+  128  cmake ..  -DNRN_ENABLE_CORENEURON=ON  -DCORENRN_ENABLE_GPU=ON
+  129  which nvc
+  130  vim ~/.bash
+  131  vim ~/.bashrc
+  132  exit
+  133  cd git_stage/temp/nrn/build/
+  134  ls
+  135  rm -rf ./*
+  136  ls
+  137  cmake ..  -DNRN_ENABLE_CORENEURON=ON  -DCORENRN_ENABLE_GPU=ON
+  138  which nvc
+  139  rm -rf ./*
+  140  cmake ..  -DNRN_ENABLE_CORENEURON=ON  -DCORENRN_ENABLE_GPU=ON
+  141  /opt/nvidia/hpc_sdk/Linux_x86_64/23.1/compilers/bin/nvc
+  142  which nvc
+  143  cmake ..  -DNRN_ENABLE_CORENEURON=ON  -DCORENRN_ENABLE_GPU=ON
+  144  sudo apt install flex
+  145  sudo apt install bison
+  146  which bison
+  147  cmake ..  -DNRN_ENABLE_CORENEURON=ON  -DCORENRN_ENABLE_GPU=ON
+  148  apt search readline
+  149  sudo apt install libreadline-dev
+  150  cmake ..  -DNRN_ENABLE_CORENEURON=ON  -DCORENRN_ENABLE_GPU=ON
+  151  sudo apt install cython
+  152  apt get update
+  153  apt update
+  154  sudo apt update
+  155  sudo apt install cython
+  156  apt search cython
+  157  apt search cython3
+  158  sudo apt install cython3
+  159  cmake ..  -DNRN_ENABLE_CORENEURON=ON  -DCORENRN_ENABLE_GPU=ON
+  160  cmake ..  -DNRN_ENABLE_CORENEURON=ON  -DCORENRN_ENABLE_GPU=ON
+  161  cmake ..  -DNRN_ENABLE_CORENEURON=ON  -DCORENRN_ENABLE_GPU=ON  -DNRN_ENABLE_INTERVIEWS=OFF  -DNRN_ENABLE_MPI=OFF  -DNRN_ENABLE_RX3D=OFF  -DCMAKE_INSTALL_PREFIX=$HOME/install  -DCMAKE_C_COMPILER=$(which nvc)  -DCMAKE_CXX_COMPILER=$(which nvc++)  -DCMAKE_CUDA_COMPILER=$(which nvcc)  -DPYTHON_EXECUTABLE=$(which python3)
+  162  rm -rf ./*
+  163  cmake ..  -DNRN_ENABLE_CORENEURON=ON  -DCORENRN_ENABLE_GPU=ON  -DNRN_ENABLE_INTERVIEWS=OFF  -DNRN_ENABLE_MPI=OFF  -DNRN_ENABLE_RX3D=OFF  -DCMAKE_INSTALL_PREFIX=$HOME/install  -DCMAKE_C_COMPILER=nvc  -DCMAKE_CXX_COMPILER=nvc  -DCMAKE_CUDA_COMPILER= nvcc  -DPYTHON_EXECUTABLE=$(which python3)
+  164  ls
+  165  cmake ..  -DNRN_ENABLE_CORENEURON=ON  -DCORENRN_ENABLE_GPU=ON  -DNRN_ENABLE_INTERVIEWS=OFF  -DNRN_ENABLE_MPI=OFF  -DNRN_ENABLE_RX3D=OFF  -DCMAKE_INSTALL_PREFIX=$HOME/install  -DCMAKE_C_COMPILER=$(which nvc)  -DCMAKE_CXX_COMPILER=$(which nvc++)  -DCMAKE_CUDA_COMPILER=$(which nvcc)  -DPYTHON_EXECUTABLE=$(which python3)
+  166  cmake --build . --parallel 8 --target install
+  167  ls
+  168  vim CMakeCache.txt
+  169  cmake --build . --parallel 8 --target install
+  170  cmake --build . --parallel 1 --target install
+  171  cmake --build . --parallel 2 --target install
+  172  cmake --build . --parallel 16 --target install
+  173  cd ../../
+  174  git clone https://github.com/neuronsimulator/iv
+  175  cd iv/
+  176  ls
+  177  history | grep cmake
+  178  cmake
+  179  cmake .
+  180  ls
+  181  cd build
+  182  mkdir build
+  183  cd build/
+  184  apt install libx11-dev libxcomposite-dev
+  185  sudo apt install libx11-dev libxcomposite-dev
+  186  cmake ../
+  187  cmake --target install
+  188  cmake install
+  189  cmake make install
+  190  make install
+  191  cmake ../ -CMAKE_INSTALL_PREFIX=/usr/local/nrn
+  192  cmake ../ -DCMAKE_INSTALL_PREFIX=/usr/local/nrn
+  193  iv
+  194  nrniv
+  195  history grep cmake
+  196  history grep| cmake
+  197  history grep | cmake
+  198  history | grep  cmake
+  199  cmake ..
+  200  ls
+  201  cd ..
+  202  ls
+  203  make
+  204  make install
+  205  mkdir /usr/local/nrn
+  206  sudo mkdir /usr/local/nrn
+  207  sudo mkdir /usr/local/nrn/include
+  208  make install
+  209  sudo make install
+  210  ls
+  211  cd ../nrn/
+  212  cd build/
+  213  ls
+  214  rm -rf ./*
+  215  cmake ..  -DNRN_ENABLE_CORENEURON=ON  -DCORENRN_ENABLE_GPU=ON  -DNRN_ENABLE_INTERVIEWS=ON  -DNRN_ENABLE_MPI=OFF  -DNRN_ENABLE_RX3D=OFF  -DCMAKE_INSTALL_PREFIX=$HOME/install  -DCMAKE_C_COMPILER=$(which nvc)  -DCMAKE_CXX_COMPILER=$(which nvc++)  -DCMAKE_CUDA_COMPILER=$(which nvcc)  -DPYTHON_EXECUTABLE=$(which python3)
+  216  history | grep cmake
+  217  cmake --build . --parallel 8 --target install
+  218  ls
+  219  ls bin
+  220  cd ..
+  221  ls
+  222  cd build/
+  223  bin/nrniv
+  224  ls
+  225  ls lib/python/neuron/
+  226  vim ~/.bashrc
+  227  exit
+  228  cd git_stage/
+  229  cd core_neuron_test/
+  230  ls
+  231  python ./core_neuron_example.py
+  232  nvidia smi
+  233  nvidia-smi
+  234  python ./core_neuron_example.py
+  235  history
