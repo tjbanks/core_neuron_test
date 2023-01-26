@@ -1,2 +1,2 @@
-node_type_id model_template mem_potential pop_name morphology model_type
-100 hoc:PN_C e PN  biophysical
+node_type_id morphology mem_potential model_template model_type pop_name
+100  e hoc:PN_C biophysical PN

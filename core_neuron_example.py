@@ -42,5 +42,5 @@ pc.psolve(h.tstop)
 corenrn_all_spike_t = corenrn_all_spike_t.to_python()
 corenrn_all_spike_gids = corenrn_all_spike_gids.to_python()
 
-
+import pdb;pdb.set_trace()
 h.quit()
