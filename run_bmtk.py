@@ -29,7 +29,7 @@ def run(config_file):
     for node in pop.get_nodes():
         node._node._node_type_props['morphology'] = node.model_template[1]
 
-    sim = CoreBioSimulator.from_config(conf, network=graph, enable_core_mods=True)
+    sim = CoreBioSimulator.from_config(conf, network=graph, gpu=False)
 
     # This calls insert_mechs() on each cell to use its gid as a seed
     # to the random number generator, so that each cell gets a different

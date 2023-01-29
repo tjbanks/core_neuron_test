@@ -40,6 +40,14 @@
       "cells": "all",
       "module": "membrane_report",
       "sections": "soma"
+    },
+    "syn_report3": {
+      "cells": {"node_ids":  [0]},
+      "variable_name": "W",
+      "module": "netcon_report",
+      "sections": "all",
+      "syn_type": "pyr2pyr",
+      "file_name": "PN2PN_W.h5"
     }
   },
   "node_sets_file": "$BASE_DIR/node_sets.json"

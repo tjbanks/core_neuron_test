@@ -32,6 +32,23 @@ Then make sure to set path
 export PYTHONPATH=$HOME/install/lib/python:$PYTHONPATH
 export PATH=$HOME/install/bin:$PATH
 ```
+
+## GPU install
+
+```
+cmake .. \
+ -DNRN_ENABLE_CORENEURON=ON \
+ -DCORENRN_ENABLE_GPU=ON \
+ -DNRN_ENABLE_INTERVIEWS=ON \
+ -DNRN_ENABLE_MPI=OFF \
+ -DNRN_ENABLE_RX3D=OFF \
+ -DCMAKE_INSTALL_PREFIX=$HOME/install \
+ -DCMAKE_C_COMPILER=$(which nvc) \
+ -DCMAKE_CXX_COMPILER=$(which nvc++) \
+ -DCMAKE_CUDA_COMPILER=$(which nvcc) \
+ -DPYTHON_EXECUTABLE=$(which python3)
+```
+
 # Files
 
 core_neuron_example.py - example from the core neuron github

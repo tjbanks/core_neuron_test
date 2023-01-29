@@ -19,7 +19,12 @@
         "node_types_file": "/home/tyler/git_stage/core_neuron_test/network/biophysical_node_types.csv"
       }
     ],
-    "edges": [],
+    "edges": [
+      {
+        "edges_file": "/home/tyler/git_stage/core_neuron_test/network/biophysical_biophysical_edges.h5",
+        "edge_types_file": "/home/tyler/git_stage/core_neuron_test/network/biophysical_biophysical_edge_types.csv"
+      }
+    ],
     "gap_juncs": []
   },
   "target_simulator": "NEURON",
@@ -59,6 +64,18 @@
       "cells": "all",
       "module": "membrane_report",
       "sections": "soma"
+    },
+    "syn_report3": {
+      "cells": {
+        "node_ids": [
+          0
+        ]
+      },
+      "variable_name": "W",
+      "module": "netcon_report",
+      "sections": "all",
+      "syn_type": "pyr2pyr",
+      "file_name": "PN2PN_W.h5"
     }
   },
   "node_sets_file": "/home/tyler/git_stage/core_neuron_test/node_sets.json",
